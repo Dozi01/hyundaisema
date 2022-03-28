@@ -1,0 +1,15 @@
+.mainImg {
+  width: 100%;
+}
+
+.description {
+  color: white;
+  position: relative;
+  top: -800px;
+  margin-left: 10%;
+}
+
+.title {
+  font-size: 42px;
+  margin-bottom: 24px;
+}

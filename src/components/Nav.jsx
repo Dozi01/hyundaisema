@@ -2,20 +2,20 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./Nav.module.css";
 import { Group_obj, Group_key_arr } from "../atom/NavList";
-import mainLogo from "../images/logo.png";
+import mainLogo from "../images/logo-removebg.png";
 
 function Nav() {
   // scroll, hover 상태에 따라 nav css 변경
-  const [NavBlue, setNavBlue] = useState(false);
+  const [NavWhite, setNavWhite] = useState(false);
   const [Hover, setHover] = useState(false);
 
   const onscroll = () => {
-    if (window.scrollY > 0 && !NavBlue) {
-      setNavBlue(true);
+    if (window.scrollY > 0 && !NavWhite) {
+      setNavWhite(true);
       return;
     }
-    if (window.scrollY == 0 && NavBlue) {
-      setNavBlue(false);
+    if (window.scrollY == 0 && NavWhite) {
+      setNavWhite(false);
       return;
     }
   };
@@ -33,21 +33,21 @@ function Nav() {
     return () => {
       window.removeEventListener("scroll", onscroll); //clean up
     };
-  }, [NavBlue]);
+  }, [NavWhite]);
 
-  const blue = {
-    backgroundColor: "#1a237e",
+  const white = {
+    backgroundColor: "white",
     boxShadow: "0 13px 27px -5px rgba(50, 50, 93, 0.25)",
   };
   const transparent = {
-    backgroundColor: "transparent",
+    backgroundColor: "rgba( 255, 255, 255, 0.5 )",
   };
 
   return (
     <div>
       <div
         className={styles.container}
-        style={NavBlue || Hover ? blue : transparent}
+        style={NavWhite || Hover ? white : transparent}
         onMouseEnter={handleMouseHover}
         onMouseLeave={handleMouseHover}
       >
@@ -61,7 +61,7 @@ function Nav() {
             return (
               <div className={styles.Link} key={key}>
                 <div className={styles.Link_sep}>
-                  <Link to={`/page/${Group_obj[key]}`}>{key}</Link>
+                  <Link to={`/${Group_obj[key]}`}>{key}</Link>
                 </div>
               </div>
             );
