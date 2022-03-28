@@ -10,6 +10,7 @@ function Home() {
           <h1 className={styles.title}>현대 프리미어 캠퍼스</h1>
           <h2 className={styles.subpage}>사업 개요</h2>
         </div>
+        <button className={styles.btn}>관심고객등록</button>
       </section>
     </div>
   );
