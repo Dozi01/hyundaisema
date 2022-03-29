@@ -2,8 +2,12 @@ import mainImg from "../images/Sample.jpg";
 import styles from "./Home.module.css";
 
 function Home() {
+  const containerStyle = {
+    backgroundImage: `url(${mainImg})`,
+    width: "100vw",
+  };
   return (
-    <div>
+    <div style={containerStyle}>
       <section>
         <img className={styles.mainImg} src={mainImg} alt="mainImg" />
         <div className={styles.description}>

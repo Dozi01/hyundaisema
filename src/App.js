@@ -1,5 +1,7 @@
 import Home from "./routes/Home";
 import Nav from "./components/Nav";
+import Customer from "./routes/Customer";
+
 import styles from "./styles.css";
 
 // import Footer from "./components/Footer";
@@ -12,6 +14,7 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/sub4_1" element={<Customer />} />
       </Routes>
     </Router>
   );
