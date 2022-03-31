@@ -1,16 +1,16 @@
-section {
-  height: 100vh;
+.container {
+  padding-top: 80px;
 }
-
-.mainImg {
-  width: 100%;
-  height: 100%;
+.coverPage {
+  width: 99vw;
+  height: 1200px;
+  background-image: url("../img/HPsemaimg/SemaImg.jpg");
+  background-size: cover;
 }
 
 .description {
   color: white;
   position: relative;
-  top: -800px;
   margin-left: 10%;
 }
 

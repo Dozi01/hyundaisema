@@ -2,23 +2,11 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./Nav.module.css";
 import { Group_obj, Group_key_arr } from "../atom/NavList";
-import mainLogo from "../images/logo-removebg.png";
+import mainLogo from "../img/logo-removebg.png";
 
 function Nav() {
   // scroll, hover 상태에 따라 nav css 변경
-  const [NavWhite, setNavWhite] = useState(false);
   const [Hover, setHover] = useState(false);
-
-  const onscroll = () => {
-    if (window.scrollY > 0 && !NavWhite) {
-      setNavWhite(true);
-      return;
-    }
-    if (window.scrollY == 0 && NavWhite) {
-      setNavWhite(false);
-      return;
-    }
-  };
 
   const handleMouseHover = () => {
     if (Hover) {
@@ -27,13 +15,6 @@ function Nav() {
       setHover(true);
     }
   };
-
-  useEffect(() => {
-    window.addEventListener("scroll", onscroll);
-    return () => {
-      window.removeEventListener("scroll", onscroll); //clean up
-    };
-  }, [NavWhite]);
 
   const white = {
     backgroundColor: "white",
@@ -47,7 +28,7 @@ function Nav() {
     <div>
       <div
         className={styles.container}
-        style={NavWhite || Hover ? white : transparent}
+        style={Hover ? white : transparent}
         onMouseEnter={handleMouseHover}
         onMouseLeave={handleMouseHover}
       >
@@ -67,7 +48,9 @@ function Nav() {
             );
           })}
         </div>
-        <a href="tel:01093953184">전화</a>
+        <button className={styles.phoneCall}>
+          <a href="tel:01093953184">전화</a>
+        </button>
       </div>
     </div>
   );
