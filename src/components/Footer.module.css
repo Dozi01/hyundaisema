@@ -1,0 +1,18 @@
+.section {
+  width: auto;
+  background-color: var(--color-dark-blue);
+  color: var(--color-dark-white);
+  padding: 40px;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.span {
+  font-size: var(--font-micro);
+  font-weight: 900;
+  display: block;
+  padding: 4px;
+}

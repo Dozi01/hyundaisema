@@ -1,4 +1,15 @@
 .section {
+  margin-top: 80px;
+  position: relative;
+}
+
+.coverImg {
+  width: 100vw;
+  max-width: 100%;
+  z-index: -1;
+}
+
+.customerInfo {
   display: flex;
   justify-content: center;
 }

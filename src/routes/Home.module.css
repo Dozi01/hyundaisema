@@ -1,16 +1,21 @@
 .container {
   padding-top: 80px;
 }
+
 .coverPage {
-  width: 99vw;
-  height: 1200px;
-  background-image: url("../img/HPsemaimg/SemaImg.jpg");
-  background-size: cover;
+  position: relative;
+}
+
+.coverImg {
+  width: 100vw;
+  max-width: 100%;
+  z-index: -1;
 }
 
 .description {
   color: white;
-  position: relative;
+  position: absolute;
+  top: 30%;
   margin-left: 10%;
 }
 
@@ -20,6 +25,7 @@
 }
 
 .btn {
+  margin: 100px;
   border: none;
   color: #000;
 }
@@ -48,4 +54,13 @@
 }
 .btn:active {
   top: 2px;
+}
+
+.mainPageContainer {
+  width: 80%;
+  margin: auto;
+}
+
+.image {
+  width: 100%;
 }

@@ -1,0 +1,22 @@
+.container {
+  padding-top: 80px;
+}
+
+.mainPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.title {
+  font-size: var(--font-large);
+  margin: 32px auto;
+}
+
+.mainPageContainer {
+  width: 60%;
+  margin: auto;
+}
+
+.image {
+  width: 100%;
+}

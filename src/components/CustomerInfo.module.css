@@ -1,5 +1,4 @@
 .formContainer {
-  margin-top: 200px;
   width: 80%;
 }
 
@@ -19,7 +18,7 @@
   margin: 10px 0;
   padding-bottom: 10px;
   width: 180px;
-  color: #e6e6e6;
+  color: var(--color-black);
   border-bottom: 3px solid #e6e6e6;
 }
 .input {
@@ -70,9 +69,6 @@ input:focus {
   margin: 24px;
   padding: 16px;
   background-color: #e0e0e0;
-}
-
-.consent p {
 }
 
 .strong {

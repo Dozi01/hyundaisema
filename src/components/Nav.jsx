@@ -49,7 +49,7 @@ function Nav() {
           })}
         </div>
         <button className={styles.phoneCall}>
-          <a href="tel:01093953184">전화</a>
+          <a href="tel:16669338">전화</a>
         </button>
       </div>
     </div>
