@@ -11,10 +11,12 @@ import Footer from "./components/Footer";
 import Sub1_1 from "./routes/Sub1_1";
 import Sub2_1 from "./routes/Sub2_1";
 import Sub3_1 from "./routes/Sub3_1";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
