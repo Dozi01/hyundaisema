@@ -4,6 +4,9 @@ import styles from "./Nav.module.css";
 import { Group_obj, Group_key_arr } from "../atom/NavList";
 import mainLogo from "../img/logo-removebg.png";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhoneFlip } from "@fortawesome/free-solid-svg-icons";
+
 function Nav() {
   // scroll, hover 상태에 따라 nav css 변경
   const [Hover, setHover] = useState(false);
@@ -49,7 +52,8 @@ function Nav() {
           })}
         </div>
         <button className={styles.phoneCall}>
-          <a href="tel:16669338">전화</a>
+          <FontAwesomeIcon icon={faPhoneFlip} />
+          <a href="tel:16669338">1666-9338</a>
         </button>
       </div>
     </div>

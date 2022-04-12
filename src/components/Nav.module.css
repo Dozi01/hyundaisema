@@ -58,8 +58,10 @@
 }
 
 .phoneCall {
-  width: 80px;
-  height: 50px;
+  padding: 0 12px;
+  height: 60px;
+  font-size: var(--font-large);
+  color: var(--color-white);
   background-color: var(--color-blue);
   border-radius: var(--border-radius);
 }
@@ -71,4 +73,5 @@
 
 .phoneCall a {
   color: var(--color-white);
+  margin-left: 8px;
 }
