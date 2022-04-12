@@ -8,7 +8,6 @@ function Customer() {
   return (
     <section className={styles.section}>
       <MenuCoverImg />
-
       <div className={styles.customerInfo}>
         <CustomerInfo />
       </div>
