@@ -1,6 +1,6 @@
 import styles from "./Sub1_1.module.css";
-import sema3 from "../img/HPsemaimg/sema3.jpg";
-import sema4 from "../img/HPsemaimg/sema4.jpg";
+import sema11 from "../img/HPsemaimg/sema11.jpg";
+import sema12 from "../img/HPsemaimg/sema12.jpg";
 
 import MenuCoverImg from "../components/MenucoverImg";
 
@@ -13,8 +13,8 @@ function Sub3_1() {
       <section className={styles.mainPage}>
         <h1 className={styles.title}>상업시설</h1>
         <div className={styles.mainPageContainer}>
-          <img className={styles.image} src={sema3} />
-          <img className={styles.image} src={sema4} />
+          <img className={styles.image} src={sema11} />
+          <img className={styles.image} src={sema12} />
         </div>
       </section>
     </div>

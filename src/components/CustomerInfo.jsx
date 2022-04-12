@@ -122,10 +122,12 @@ function CustomerInfo() {
           <span
             className={styles.checkbox}
             type="개인정보 수집 및 이용에 동의하십니까? (필수)"
-          ></span>
+          >
+            "개인정보 수집 및 이용에 동의하십니까? (필수)"
+          </span>
         </label>
         <button className={styles.button} type="submit" href="/">
-          Submit
+          제출
         </button>
       </form>
     </div>

@@ -63,7 +63,14 @@
   width: 100%;
 }
 
+.title {
+  margin-top: 24px;
+
+  font-size: var(--font-large);
+}
 .phrases1 {
+  margin-top: 24px;
+
   font-size: var(--font-medium);
 }
 
