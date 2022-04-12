@@ -53,8 +53,20 @@
 .mainPageContainer {
   width: 80%;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .image {
   width: 100%;
+}
+
+.phrases1 {
+  font-size: var(--font-medium);
+}
+
+.phrases2 {
+  font-size: var(--font-large);
 }

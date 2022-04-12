@@ -1,6 +1,8 @@
 import styles from "./Home.module.css";
 import sema1 from "../img/HPsemaimg/sema1.jpg";
-import sema2 from "../img/HPsemaimg/sema2.jpg";
+import sema5 from "../img/HPsemaimg/sema5.jpg";
+import sema10 from "../img/HPsemaimg/sema10.jpg";
+
 import MainBanner from "../components/MainBanner";
 
 function Home() {
@@ -17,8 +19,12 @@ function Home() {
       <section className={styles.mainPage}>
         <div className={styles.mainPageContainer}>
           <img className={styles.image} src={sema1} />
-
-          <img className={styles.image} src={sema2} />
+          <h3 className={styles.phrases1}>
+            세교신도시를 대표하는 지식산업센터
+          </h3>
+          <h3 className={styles.phrases2}>성공 비즈니스의 미래가 되다!</h3>
+          <img className={styles.image} src={sema5} />
+          <img className={styles.image} src={sema10} />
         </div>
       </section>
     </div>
