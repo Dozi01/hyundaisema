@@ -3,7 +3,7 @@ import { writeUserData } from "../service/Db";
 import styles from "./CustomerInfo.module.css";
 
 function CustomerInfo() {
-  const [values, setValues] = useState({ name: "", email: "", phoneNum: "" });
+  const [values, setValues] = useState({ name: "", phoneNum: "", message: "" });
   //   const [check, setCheck] = use;
 
   const handleChange = (e) => {
@@ -12,28 +12,20 @@ function CustomerInfo() {
   };
 
   const handleSubmit = (e) => {
-    writeUserData(values.name, values.email, values.phoneNum);
+    writeUserData(values.name, values.phoneNum, values.message);
     alert("제출되었습니다!");
     e.preventDefault();
-    setValues({ name: "", email: "", phoneNum: "" });
+    setValues({ name: "", phoneNum: "", message: "" });
   };
 
   return (
     <div className={styles.formContainer}>
       <h2 className={styles.title}>관심 고객 등록</h2>
       <form className={styles.form} onSubmit={handleSubmit}>
-        <p className={styles.inputBox} type="성 명:">
+        <p className={styles.inputBox} type="성 함:">
           <input
             value={values.name}
             name="name"
-            className={styles.input}
-            onChange={handleChange}
-          />
-        </p>
-        <p className={styles.inputBox} type="E-mail:">
-          <input
-            value={values.email}
-            name="email"
             className={styles.input}
             onChange={handleChange}
           />
@@ -42,6 +34,14 @@ function CustomerInfo() {
           <input
             value={values.phoneNum}
             name="phoneNum"
+            className={styles.input}
+            onChange={handleChange}
+          />
+        </p>
+        <p className={styles.inputBox} type="Message(방문 예정 시간 등)">
+          <input
+            value={values.message}
+            name="message"
             className={styles.input}
             onChange={handleChange}
           />
@@ -123,11 +123,11 @@ function CustomerInfo() {
             className={styles.checkbox}
             type="개인정보 수집 및 이용에 동의하십니까? (필수)"
           >
-            "개인정보 수집 및 이용에 동의하십니까? (필수)"
+            개인정보 수집 및 이용에 동의하십니까? (필수)
           </span>
         </label>
         <button className={styles.button} type="submit" href="/">
-          제출
+          Submit
         </button>
       </form>
     </div>

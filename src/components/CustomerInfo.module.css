@@ -1,14 +1,14 @@
 .formContainer {
   width: 80%;
-  margin: 48px 0;
+  margin: 24px 0;
 }
 
 .form {
   width: 100%;
   background: #e6e6e6;
   border-radius: 8px;
-  box-shadow: 0 0 40px -10px #000;
-  padding: 32px;
+  box-shadow: 0 0 24px -10px #000;
+  padding: 24px 32px;
   padding-bottom: 48px;
   max-width: calc(100vw - 40px);
   box-sizing: border-box;
@@ -18,14 +18,16 @@
 
 .title {
   margin: 10px 0;
-  padding-bottom: 10px;
-  width: 180px;
+  font-size: var(--font-medium);
+  padding-bottom: 8px;
+  width: 200px;
   color: var(--color-black);
-  border-bottom: 3px solid #e6e6e6;
+  border-bottom: 2px solid var(--color-blue);
 }
+
 .input {
   width: 100%;
-  padding: 10px;
+  padding: 8px;
   box-sizing: border-box;
   background: none;
   outline: none;
@@ -37,22 +39,22 @@
 }
 
 input:focus {
-  border-bottom: 2px solid #78788c;
+  border-bottom: 2px solid var(--color-blue);
 }
 
 .inputBox:before {
   content: attr(type);
   display: block;
-  margin: 28px 0 0;
+  margin: 12px 0 0;
   font-size: var(--font-mini);
-  color: #5a5a5a;
+  color: var(--color-black);
 }
 
 .consent {
   font-size: var(--font-micro);
   overflow: auto;
   height: 150px;
-  margin: 24px;
+  margin: 12px;
   padding: 16px;
   background-color: #e0e0e0;
 }
@@ -67,17 +69,21 @@ input:focus {
 }
 
 .button {
-  float: right;
+  width: 100%;
+  margin-top: 12px;
   padding: 8px 12px;
 
   font-family: "Montserrat", sans-serif;
-  border: 2px solid #78788c;
-  background: 0;
-  color: #5a5a6e;
+  font-size: var(--font-small);
+  background-color: var(--color-blue);
+  color: var(--color-white);
+
+  border-radius: var(--border-radius);
   cursor: pointer;
   transition: all 0.3s;
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 }
 .button:hover {
-  background: #78788c;
-  color: #fff;
+  background-color: var(--color-dark-blue);
 }

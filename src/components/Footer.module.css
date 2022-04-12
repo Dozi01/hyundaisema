@@ -1,6 +1,6 @@
 .section {
   width: auto;
-  background-color: var(--color-dark-blue);
+  background-color: var(--color-footer-blue);
   color: var(--color-dark-white);
   padding: 40px;
 }
