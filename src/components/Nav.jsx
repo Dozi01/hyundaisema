@@ -40,7 +40,7 @@ function Nav() {
             <img className={styles.Logo} src={mainLogo} alt="hyundaisemaLogo" />
           </Link>
         </div>
-        <div className={styles.Nav__option__list}>
+        <div className={styles.NavOptionList}>
           {Group_key_arr.map((key) => {
             return (
               <div className={styles.Link} key={key}>

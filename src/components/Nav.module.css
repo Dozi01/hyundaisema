@@ -30,7 +30,7 @@
   width: 160px;
 }
 
-.Nav__option__list {
+.NavOptionList {
   display: flex;
 }
 
@@ -77,4 +77,16 @@
 .phoneCall a {
   color: var(--color-white);
   margin-left: 8px;
+}
+
+@media (max-width: 1200px) {
+  .NavOptionList {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .NavOptionList {
+    display: none;
+  }
 }
