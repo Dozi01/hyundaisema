@@ -18,6 +18,7 @@ function Nav() {
   const handleMouseHover = () => {
     if (Hover) {
       setHover(false);
+      setMenuOpen(false);
     } else {
       setHover(true);
     }
@@ -39,13 +40,12 @@ function Nav() {
   };
 
   return (
-    <div className={styles.container}>
-      <div
-        className={styles.navContainer}
-        style={Hover ? white : transparent}
-        onMouseEnter={handleMouseHover}
-        onMouseLeave={handleMouseHover}
-      >
+    <div
+      className={styles.container}
+      onMouseEnter={handleMouseHover}
+      onMouseLeave={handleMouseHover}
+    >
+      <div className={styles.navContainer} style={Hover ? white : transparent}>
         <div className={styles.menuButtonContainer}>
           <button className={styles.menuButton} onClick={menuButton}>
             {menuOpen ? (
@@ -63,29 +63,27 @@ function Nav() {
         <div className={styles.navOptionList}>
           {Group_key_arr.map((key) => {
             return (
-              <div className={styles.Link} key={key}>
-                <div className={styles.Link_sep}>
-                  <Link to={`/${Group_obj[key]}`}>{key}</Link>
-                </div>
-              </div>
+              <li className={styles.link} key={key}>
+                <Link to={`/${Group_obj[key]}`}>{key}</Link>
+              </li>
             );
           })}
         </div>
 
         <button className={styles.phoneCall}>
-          <FontAwesomeIcon icon={faPhoneFlip} />
-          <a href="tel:16669338">1666-9338</a>
+          <a href="tel:16669338">
+            <FontAwesomeIcon icon={faPhoneFlip} />
+            1666-9338
+          </a>
         </button>
       </div>
       {menuOpen ? (
         <div className={styles.navOptionListOpen}>
           {Group_key_arr.map((key) => {
             return (
-              <div className={styles.Link} key={key}>
-                <div className={styles.Link_sep}>
-                  <Link to={`/${Group_obj[key]}`}>{key}</Link>
-                </div>
-              </div>
+              <li className={styles.linkOpen} key={key}>
+                <Link to={`/${Group_obj[key]}`}>{key}</Link>
+              </li>
             );
           })}
         </div>

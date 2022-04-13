@@ -16,11 +16,6 @@
   transition: 0.4s ease;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-}
-
 .container ul {
   padding: 0;
   list-style: none;
@@ -43,15 +38,17 @@ a {
   display: flex;
 }
 
-.Link {
+.link {
   font-weight: 900;
   font-size: var(--font-small);
-  margin: 4px 18px;
   transition: all 300ms ease-out;
 }
 
-.Link:hover {
+.link:hover {
   transform: translateY(-5px);
+}
+.link a {
+  padding: 20px;
 }
 
 .icon__list {
@@ -67,9 +64,7 @@ a {
 }
 
 .phoneCall {
-  padding: 0 12px;
-  height: 60px;
-  font-size: var(--font-large);
+  font-size: var(--font-medium);
   color: var(--color-white);
   background-color: var(--color-blue);
   border-radius: var(--border-radius);
@@ -84,8 +79,12 @@ a {
 }
 
 .phoneCall a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  padding: 0 8px;
   color: var(--color-white);
-  margin-left: 8px;
 }
 
 .navOptionListOpen {
@@ -94,7 +93,20 @@ a {
   width: 100%;
   flex-direction: column;
   align-items: center;
-  background-color: white;
+  background-color: var(--color-light-white);
+}
+.linkOpen {
+  font-weight: 900;
+  font-size: var(--font-small);
+  width: 90%;
+  border-bottom: 1px dashed var(--color-grey);
+}
+
+.linkOpen a {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 12px 24px;
 }
 
 @media (max-width: 1200px) {
@@ -125,7 +137,9 @@ a {
     width: 120px;
   }
   .phoneCall {
-    height: 30px;
     font-size: var(--font-small);
+  }
+  .phoneCall a {
+    height: 30px;
   }
 }
