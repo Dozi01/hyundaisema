@@ -1,8 +1,7 @@
 import styles from "./Sub1_1.module.css";
-import sema3 from "../img/HPsemaimg/sema3.jpg";
-import sema4 from "../img/HPsemaimg/sema4.jpg";
 
 import MenuCoverImg from "../components/MenucoverImg";
+import FloorInfo from "../components/FloorInfo";
 
 function Sub5_1() {
   return (
@@ -11,10 +10,9 @@ function Sub5_1() {
         <MenuCoverImg />
       </section>
       <section className={styles.mainPage}>
-        <h1 className={styles.title}>사업개요</h1>
+        <h1 className={styles.title}>층별안내</h1>
         <div className={styles.mainPageContainer}>
-          <img className={styles.image} src={sema3} />
-          <img className={styles.image} src={sema4} />
+          <FloorInfo />
         </div>
       </section>
     </div>

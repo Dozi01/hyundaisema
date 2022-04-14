@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.pagination {
+}
+.image {
+  width: 100%;
+  margin-bottom: 24px;
+  padding: 8px;
+  border: 2px solid var(--color-grey);
+  border-radius: 12px;
+}
+@media (max-width: 1200px) {
+  .pagination {
+  }
+}
+
+@media (max-width: 768px) {
+  .pagination {
+  }
+}
