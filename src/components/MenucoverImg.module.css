@@ -1,0 +1,22 @@
+.menuCoverImgContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--color-menu-black);
+}
+.menuCoverImg {
+  height: 300px;
+  margin: auto;
+}
+
+@media (max-width: 1200px) {
+  .menuCoverImg {
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menuCoverImg {
+    height: 100px;
+  }
+}

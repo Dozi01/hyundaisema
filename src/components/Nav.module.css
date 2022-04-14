@@ -29,6 +29,7 @@
 .menuButton {
   font-size: 30px;
   background-color: transparent;
+  cursor: pointer;
 }
 .logo {
   width: 160px;

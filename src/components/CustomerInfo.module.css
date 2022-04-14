@@ -87,3 +87,13 @@ input:focus {
 .button:hover {
   background-color: var(--color-dark-blue);
 }
+
+@media (max-width: 1200px) {
+  .formContainer {
+    width: 100%;
+    margin: 24px 0;
+  }
+}
+
+@media (max-width: 768px) {
+}

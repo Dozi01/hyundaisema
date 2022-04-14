@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import styles from "./Nav.module.css";
 import { Group_obj, Group_key_arr } from "../atom/NavList";
 import mainLogo from "../img/logo-removebg.png";
@@ -15,6 +15,9 @@ function Nav() {
   // scroll, hover 상태에 따라 nav css 변경
   const [Hover, setHover] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const { pathname } = useLocation();
+
   const handleMouseHover = () => {
     if (Hover) {
       setHover(false);
@@ -30,6 +33,10 @@ function Nav() {
       setMenuOpen(true);
     }
   };
+
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [pathname]);
 
   const white = {
     backgroundColor: "white",

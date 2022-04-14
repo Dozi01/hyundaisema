@@ -18,6 +18,9 @@ function Footer() {
             업체명 : HS홀딩스코리아 (사업자번호 : 869-86-00266)
           </span>
           <span className={styles.span}>
+            사이트 관리자: 최유민 (ytooom018@naver.com)
+          </span>
+          <span className={styles.span}>
             COPYRIGHT@2022. ALL RIGHTS RESERVED.
           </span>
         </p>
