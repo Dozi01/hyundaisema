@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/hyundaisema/static/css/main.abab1a79.css",
-    "main.js": "/hyundaisema/static/js/main.26b36bc1.js",
+    "main.css": "/hyundaisema/static/css/main.bf5bf581.css",
+    "main.js": "/hyundaisema/static/js/main.7c933b23.js",
     "static/js/787.5ec0b700.chunk.js": "/hyundaisema/static/js/787.5ec0b700.chunk.js",
     "static/media/sema11.jpg": "/hyundaisema/static/media/sema11.08cf02aef32adcb9ef47.jpg",
     "static/media/sema4.jpg": "/hyundaisema/static/media/sema4.9e9e56e304a18686c76a.jpg",
@@ -30,12 +30,12 @@
     "static/media/logo-removebg.png": "/hyundaisema/static/media/logo-removebg.26a383b6bdc92ccd0b16.png",
     "static/media/semamenu2.jpg": "/hyundaisema/static/media/semamenu2.6fd6fa7c94e17ed80ccd.jpg",
     "index.html": "/hyundaisema/index.html",
-    "main.abab1a79.css.map": "/hyundaisema/static/css/main.abab1a79.css.map",
-    "main.26b36bc1.js.map": "/hyundaisema/static/js/main.26b36bc1.js.map",
+    "main.bf5bf581.css.map": "/hyundaisema/static/css/main.bf5bf581.css.map",
+    "main.7c933b23.js.map": "/hyundaisema/static/js/main.7c933b23.js.map",
     "787.5ec0b700.chunk.js.map": "/hyundaisema/static/js/787.5ec0b700.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.abab1a79.css",
-    "static/js/main.26b36bc1.js"
+    "static/css/main.bf5bf581.css",
+    "static/js/main.7c933b23.js"
   ]
 }
