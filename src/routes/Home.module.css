@@ -45,3 +45,13 @@
 .phrases2 {
   font-size: var(--font-large);
 }
+
+@media (max-width: 1200px) {
+  .mainPageContainer {
+    width: 95%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 768px) {
+}
