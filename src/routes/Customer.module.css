@@ -10,7 +10,18 @@
 }
 
 .customerInfo {
+  width: 95%;
+  margin: auto;
   display: flex;
   justify-content: center;
-  padding: 40px;
+  padding: 20px 0;
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 768px) {
+  .formContainer {
+    width: 100%;
+  }
 }

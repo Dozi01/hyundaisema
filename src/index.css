@@ -101,11 +101,11 @@ button:active {
 @media (max-width: 768px) {
   :root {
     /* Font size */
-    --font-large: 18px;
-    --font-medium: 16px;
-    --font-regular: 14px;
-    --font-small: 12px;
-    --font-mini: 10px;
+    --font-large: 24px;
+    --font-medium: 20px;
+    --font-regular: 18px;
+    --font-small: 14px;
+    --font-mini: 12px;
     --font-micro: 10px;
   }
 }

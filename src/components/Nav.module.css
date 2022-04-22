@@ -87,7 +87,9 @@
   padding: 0 8px;
   color: var(--color-white);
 }
-
+.phoneNum {
+  margin-left: 8px;
+}
 .navOptionListOpen {
   display: flex;
   padding-bottom: 8px;

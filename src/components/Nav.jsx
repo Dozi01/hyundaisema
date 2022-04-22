@@ -80,7 +80,7 @@ function Nav() {
         <button className={styles.phoneCall}>
           <a href="tel:16669338">
             <FontAwesomeIcon icon={faPhoneFlip} />
-            1666-9338
+            <span className={styles.phoneNum}>1666-9338</span>
           </a>
         </button>
       </div>
